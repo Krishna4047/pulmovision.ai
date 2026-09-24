@@ -1,0 +1,3877 @@
+{
+  "total_patients": 1000,
+  "features_count": 23,
+  "level_counts": {
+    "High": 365,
+    "Medium": 332,
+    "Low": 303
+  },
+  "level_percentages": {
+    "High": 36.5,
+    "Medium": 33.2,
+    "Low": 30.3
+  },
+  "level_order": [
+    "Low",
+    "Medium",
+    "High"
+  ],
+  "feature_cols": [
+    "Age",
+    "Gender",
+    "Air Pollution",
+    "Alcohol use",
+    "Dust Allergy",
+    "OccuPational Hazards",
+    "Genetic Risk",
+    "chronic Lung Disease",
+    "Balanced Diet",
+    "Obesity",
+    "Smoking",
+    "Passive Smoker",
+    "Chest Pain",
+    "Coughing of Blood",
+    "Fatigue",
+    "Weight Loss",
+    "Shortness of Breath",
+    "Wheezing",
+    "Swallowing Difficulty",
+    "Clubbing of Finger Nails",
+    "Frequent Cold",
+    "Dry Cough",
+    "Snoring"
+  ],
+  "feature_stats": {
+    "Age": {
+      "min": 14,
+      "max": 73,
+      "mean": 37.17,
+      "median": 36.0,
+      "std": 12.01,
+      "unique_values": [
+        14,
+        17,
+        18,
+        19,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        51,
+        52,
+        53,
+        54,
+        55,
+        61,
+        62,
+        63,
+        64,
+        65,
+        73
+      ],
+      "counts_by_value": {
+        "14": 9,
+        "17": 20,
+        "18": 18,
+        "19": 20,
+        "22": 19,
+        "23": 19,
+        "24": 30,
+        "25": 30,
+        "26": 37,
+        "27": 48,
+        "28": 32,
+        "29": 19,
+        "31": 9,
+        "32": 31,
+        "33": 69,
+        "34": 10,
+        "35": 77,
+        "36": 21,
+        "37": 51,
+        "38": 69,
+        "39": 21,
+        "42": 20,
+        "43": 1,
+        "44": 51,
+        "45": 42,
+        "46": 23,
+        "47": 20,
+        "48": 40,
+        "49": 10,
+        "51": 1,
+        "52": 31,
+        "53": 19,
+        "54": 1,
+        "55": 11,
+        "61": 10,
+        "62": 30,
+        "63": 1,
+        "64": 10,
+        "65": 10,
+        "73": 10
+      },
+      "mean_by_level": {
+        "Low": 35.41,
+        "Medium": 38.62,
+        "High": 37.32
+      }
+    },
+    "Gender": {
+      "min": 1,
+      "max": 2,
+      "mean": 1.4,
+      "median": 1.0,
+      "std": 0.49,
+      "unique_values": [
+        1,
+        2
+      ],
+      "counts_by_value": {
+        "1": 598,
+        "2": 402
+      },
+      "mean_by_level": {
+        "Low": 1.51,
+        "Medium": 1.41,
+        "High": 1.31
+      }
+    },
+    "Air Pollution": {
+      "min": 1,
+      "max": 8,
+      "mean": 3.84,
+      "median": 3.0,
+      "std": 2.03,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "counts_by_value": {
+        "1": 141,
+        "2": 201,
+        "3": 173,
+        "4": 90,
+        "5": 20,
+        "6": 326,
+        "7": 30,
+        "8": 19
+      },
+      "mean_by_level": {
+        "Low": 2.6,
+        "Medium": 2.93,
+        "High": 5.69
+      }
+    },
+    "Alcohol use": {
+      "min": 1,
+      "max": 8,
+      "mean": 4.56,
+      "median": 5.0,
+      "std": 2.62,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "counts_by_value": {
+        "1": 152,
+        "2": 202,
+        "3": 80,
+        "4": 41,
+        "5": 90,
+        "6": 80,
+        "7": 167,
+        "8": 188
+      },
+      "mean_by_level": {
+        "Low": 2.23,
+        "Medium": 4.2,
+        "High": 6.83
+      }
+    },
+    "Dust Allergy": {
+      "min": 1,
+      "max": 8,
+      "mean": 5.17,
+      "median": 6.0,
+      "std": 1.98,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "counts_by_value": {
+        "1": 60,
+        "2": 70,
+        "3": 101,
+        "4": 133,
+        "5": 111,
+        "6": 110,
+        "7": 405,
+        "8": 10
+      },
+      "mean_by_level": {
+        "Low": 3.11,
+        "Medium": 5.44,
+        "High": 6.62
+      }
+    },
+    "OccuPational Hazards": {
+      "min": 1,
+      "max": 8,
+      "mean": 4.84,
+      "median": 5.0,
+      "std": 2.11,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "counts_by_value": {
+        "1": 50,
+        "2": 132,
+        "3": 151,
+        "4": 112,
+        "5": 130,
+        "6": 30,
+        "7": 365,
+        "8": 30
+      },
+      "mean_by_level": {
+        "Low": 3.0,
+        "Medium": 4.72,
+        "High": 6.48
+      }
+    },
+    "Genetic Risk": {
+      "min": 1,
+      "max": 7,
+      "mean": 4.58,
+      "median": 5.0,
+      "std": 2.13,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "counts_by_value": {
+        "1": 40,
+        "2": 212,
+        "3": 173,
+        "4": 40,
+        "5": 100,
+        "6": 108,
+        "7": 327
+      },
+      "mean_by_level": {
+        "Low": 2.73,
+        "Medium": 4.29,
+        "High": 6.38
+      }
+    },
+    "chronic Lung Disease": {
+      "min": 1,
+      "max": 7,
+      "mean": 4.38,
+      "median": 4.0,
+      "std": 1.85,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "counts_by_value": {
+        "1": 50,
+        "2": 173,
+        "3": 141,
+        "4": 141,
+        "5": 80,
+        "6": 308,
+        "7": 107
+      },
+      "mean_by_level": {
+        "Low": 3.09,
+        "Medium": 3.96,
+        "High": 5.83
+      }
+    },
+    "Balanced Diet": {
+      "min": 1,
+      "max": 7,
+      "mean": 4.49,
+      "median": 4.0,
+      "std": 2.14,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "counts_by_value": {
+        "1": 40,
+        "2": 231,
+        "3": 173,
+        "4": 61,
+        "5": 40,
+        "6": 159,
+        "7": 296
+      },
+      "mean_by_level": {
+        "Low": 3.0,
+        "Medium": 3.51,
+        "High": 6.62
+      }
+    },
+    "Obesity": {
+      "min": 1,
+      "max": 7,
+      "mean": 4.46,
+      "median": 4.0,
+      "std": 2.12,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "counts_by_value": {
+        "1": 70,
+        "2": 140,
+        "3": 193,
+        "4": 191,
+        "5": 20,
+        "6": 30,
+        "7": 356
+      },
+      "mean_by_level": {
+        "Low": 2.41,
+        "Medium": 3.9,
+        "High": 6.68
+      }
+    },
+    "Smoking": {
+      "min": 1,
+      "max": 8,
+      "mean": 3.95,
+      "median": 3.0,
+      "std": 2.5,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "counts_by_value": {
+        "1": 181,
+        "2": 222,
+        "3": 172,
+        "4": 59,
+        "5": 10,
+        "6": 60,
+        "7": 207,
+        "8": 89
+      },
+      "mean_by_level": {
+        "Low": 3.02,
+        "Medium": 2.45,
+        "High": 6.07
+      }
+    },
+    "Passive Smoker": {
+      "min": 1,
+      "max": 8,
+      "mean": 4.2,
+      "median": 4.0,
+      "std": 2.31,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "counts_by_value": {
+        "1": 60,
+        "2": 284,
+        "3": 140,
+        "4": 161,
+        "5": 30,
+        "6": 30,
+        "7": 187,
+        "8": 108
+      },
+      "mean_by_level": {
+        "Low": 2.63,
+        "Medium": 3.05,
+        "High": 6.53
+      }
+    },
+    "Chest Pain": {
+      "min": 1,
+      "max": 9,
+      "mean": 4.44,
+      "median": 4.0,
+      "std": 2.28,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "counts_by_value": {
+        "1": 80,
+        "2": 181,
+        "3": 153,
+        "4": 191,
+        "5": 10,
+        "6": 40,
+        "7": 296,
+        "8": 30,
+        "9": 19
+      },
+      "mean_by_level": {
+        "Low": 2.83,
+        "Medium": 3.75,
+        "High": 6.39
+      }
+    },
+    "Coughing of Blood": {
+      "min": 1,
+      "max": 9,
+      "mean": 4.86,
+      "median": 4.0,
+      "std": 2.43,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "counts_by_value": {
+        "1": 71,
+        "2": 121,
+        "3": 171,
+        "4": 172,
+        "5": 50,
+        "6": 49,
+        "7": 187,
+        "8": 119,
+        "9": 60
+      },
+      "mean_by_level": {
+        "Low": 2.86,
+        "Medium": 3.85,
+        "High": 7.44
+      }
+    },
+    "Fatigue": {
+      "min": 1,
+      "max": 9,
+      "mean": 3.86,
+      "median": 3.0,
+      "std": 2.24,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9
+      ],
+      "counts_by_value": {
+        "1": 110,
+        "2": 211,
+        "3": 212,
+        "4": 180,
+        "5": 89,
+        "6": 50,
+        "8": 109,
+        "9": 39
+      },
+      "mean_by_level": {
+        "Low": 2.17,
+        "Medium": 3.49,
+        "High": 5.59
+      }
+    },
+    "Weight Loss": {
+      "min": 1,
+      "max": 8,
+      "mean": 3.85,
+      "median": 3.0,
+      "std": 2.21,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "counts_by_value": {
+        "1": 121,
+        "2": 280,
+        "3": 150,
+        "4": 60,
+        "5": 100,
+        "6": 49,
+        "7": 230,
+        "8": 10
+      },
+      "mean_by_level": {
+        "Low": 2.5,
+        "Medium": 4.42,
+        "High": 4.47
+      }
+    },
+    "Shortness of Breath": {
+      "min": 1,
+      "max": 9,
+      "mean": 4.24,
+      "median": 4.0,
+      "std": 2.29,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9
+      ],
+      "counts_by_value": {
+        "1": 80,
+        "2": 243,
+        "3": 140,
+        "4": 90,
+        "5": 87,
+        "6": 201,
+        "7": 89,
+        "9": 70
+      },
+      "mean_by_level": {
+        "Low": 2.5,
+        "Medium": 4.63,
+        "High": 5.33
+      }
+    },
+    "Wheezing": {
+      "min": 1,
+      "max": 8,
+      "mean": 3.78,
+      "median": 4.0,
+      "std": 2.04,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "counts_by_value": {
+        "1": 149,
+        "2": 240,
+        "3": 60,
+        "4": 163,
+        "5": 171,
+        "6": 68,
+        "7": 139,
+        "8": 10
+      },
+      "mean_by_level": {
+        "Low": 2.57,
+        "Medium": 4.76,
+        "High": 3.88
+      }
+    },
+    "Swallowing Difficulty": {
+      "min": 1,
+      "max": 8,
+      "mean": 3.75,
+      "median": 4.0,
+      "std": 2.27,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "counts_by_value": {
+        "1": 221,
+        "2": 160,
+        "3": 90,
+        "4": 189,
+        "5": 110,
+        "6": 91,
+        "7": 29,
+        "8": 110
+      },
+      "mean_by_level": {
+        "Low": 2.76,
+        "Medium": 4.16,
+        "High": 4.19
+      }
+    },
+    "Clubbing of Finger Nails": {
+      "min": 1,
+      "max": 9,
+      "mean": 3.92,
+      "median": 4.0,
+      "std": 2.39,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "counts_by_value": {
+        "1": 131,
+        "2": 240,
+        "3": 100,
+        "4": 220,
+        "5": 120,
+        "6": 10,
+        "7": 40,
+        "8": 59,
+        "9": 80
+      },
+      "mean_by_level": {
+        "Low": 2.47,
+        "Medium": 4.94,
+        "High": 4.21
+      }
+    },
+    "Frequent Cold": {
+      "min": 1,
+      "max": 7,
+      "mean": 3.54,
+      "median": 3.0,
+      "std": 1.83,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "counts_by_value": {
+        "1": 139,
+        "2": 192,
+        "3": 230,
+        "4": 180,
+        "5": 20,
+        "6": 170,
+        "7": 69
+      },
+      "mean_by_level": {
+        "Low": 2.37,
+        "Medium": 3.67,
+        "High": 4.38
+      }
+    },
+    "Dry Cough": {
+      "min": 1,
+      "max": 7,
+      "mean": 3.85,
+      "median": 4.0,
+      "std": 2.04,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "counts_by_value": {
+        "1": 119,
+        "2": 251,
+        "3": 101,
+        "4": 141,
+        "5": 131,
+        "6": 89,
+        "7": 168
+      },
+      "mean_by_level": {
+        "Low": 2.91,
+        "Medium": 3.7,
+        "High": 4.78
+      }
+    },
+    "Snoring": {
+      "min": 1,
+      "max": 7,
+      "mean": 2.93,
+      "median": 3.0,
+      "std": 1.47,
+      "unique_values": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "counts_by_value": {
+        "1": 170,
+        "2": 300,
+        "3": 211,
+        "4": 131,
+        "5": 139,
+        "6": 39,
+        "7": 10
+      },
+      "mean_by_level": {
+        "Low": 2.14,
+        "Medium": 3.31,
+        "High": 3.23
+      }
+    }
+  },
+  "feature_importances": [
+    {
+      "feature": "Coughing of Blood",
+      "importance": 11.74
+    },
+    {
+      "feature": "Obesity",
+      "importance": 10.43
+    },
+    {
+      "feature": "Passive Smoker",
+      "importance": 7.87
+    },
+    {
+      "feature": "Wheezing",
+      "importance": 6.84
+    },
+    {
+      "feature": "Fatigue",
+      "importance": 6.18
+    },
+    {
+      "feature": "Balanced Diet",
+      "importance": 5.23
+    },
+    {
+      "feature": "Smoking",
+      "importance": 5.14
+    },
+    {
+      "feature": "Swallowing Difficulty",
+      "importance": 4.58
+    },
+    {
+      "feature": "Dust Allergy",
+      "importance": 4.1
+    },
+    {
+      "feature": "Shortness of Breath",
+      "importance": 4.1
+    },
+    {
+      "feature": "Alcohol use",
+      "importance": 4.04
+    },
+    {
+      "feature": "Clubbing of Finger Nails",
+      "importance": 3.91
+    },
+    {
+      "feature": "Air Pollution",
+      "importance": 3.71
+    },
+    {
+      "feature": "Genetic Risk",
+      "importance": 3.54
+    },
+    {
+      "feature": "OccuPational Hazards",
+      "importance": 3.43
+    },
+    {
+      "feature": "Snoring",
+      "importance": 3.42
+    },
+    {
+      "feature": "Chest Pain",
+      "importance": 3.04
+    },
+    {
+      "feature": "Weight Loss",
+      "importance": 2.91
+    },
+    {
+      "feature": "Frequent Cold",
+      "importance": 2.25
+    },
+    {
+      "feature": "Dry Cough",
+      "importance": 1.66
+    },
+    {
+      "feature": "chronic Lung Disease",
+      "importance": 1.19
+    },
+    {
+      "feature": "Age",
+      "importance": 0.65
+    },
+    {
+      "feature": "Gender",
+      "importance": 0.05
+    }
+  ],
+  "model_metrics": {
+    "Random Forest": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "confusion_matrix": [
+        [
+          61,
+          0,
+          0
+        ],
+        [
+          0,
+          66,
+          0
+        ],
+        [
+          0,
+          0,
+          73
+        ]
+      ]
+    },
+    "AdaBoost Classifier": {
+      "accuracy": 91.5,
+      "precision": 91.93,
+      "recall": 91.5,
+      "f1_score": 91.43,
+      "confusion_matrix": [
+        [
+          48,
+          13,
+          0
+        ],
+        [
+          4,
+          62,
+          0
+        ],
+        [
+          0,
+          0,
+          73
+        ]
+      ]
+    },
+    "K-Nearest Neighbors (KNN)": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "confusion_matrix": [
+        [
+          61,
+          0,
+          0
+        ],
+        [
+          0,
+          66,
+          0
+        ],
+        [
+          0,
+          0,
+          73
+        ]
+      ]
+    },
+    "Decision Tree": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "confusion_matrix": [
+        [
+          61,
+          0,
+          0
+        ],
+        [
+          0,
+          66,
+          0
+        ],
+        [
+          0,
+          0,
+          73
+        ]
+      ]
+    },
+    "Logistic Regression": {
+      "accuracy": 100.0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1_score": 100.0,
+      "confusion_matrix": [
+        [
+          61,
+          0,
+          0
+        ],
+        [
+          0,
+          66,
+          0
+        ],
+        [
+          0,
+          0,
+          73
+        ]
+      ]
+    }
+  },
+  "correlations": [
+    {
+      "feature": "Obesity",
+      "correlation": 0.827
+    },
+    {
+      "feature": "Coughing of Blood",
+      "correlation": 0.782
+    },
+    {
+      "feature": "Alcohol use",
+      "correlation": 0.719
+    },
+    {
+      "feature": "Dust Allergy",
+      "correlation": 0.714
+    },
+    {
+      "feature": "Balanced Diet",
+      "correlation": 0.706
+    },
+    {
+      "feature": "Passive Smoker",
+      "correlation": 0.704
+    },
+    {
+      "feature": "Genetic Risk",
+      "correlation": 0.701
+    },
+    {
+      "feature": "OccuPational Hazards",
+      "correlation": 0.673
+    },
+    {
+      "feature": "Chest Pain",
+      "correlation": 0.645
+    },
+    {
+      "feature": "Air Pollution",
+      "correlation": 0.636
+    },
+    {
+      "feature": "Fatigue",
+      "correlation": 0.625
+    },
+    {
+      "feature": "chronic Lung Disease",
+      "correlation": 0.61
+    },
+    {
+      "feature": "Smoking",
+      "correlation": 0.52
+    },
+    {
+      "feature": "Shortness of Breath",
+      "correlation": 0.497
+    },
+    {
+      "feature": "Frequent Cold",
+      "correlation": 0.444
+    },
+    {
+      "feature": "Dry Cough",
+      "correlation": 0.374
+    },
+    {
+      "feature": "Weight Loss",
+      "correlation": 0.353
+    },
+    {
+      "feature": "Snoring",
+      "correlation": 0.289
+    },
+    {
+      "feature": "Clubbing of Finger Nails",
+      "correlation": 0.28
+    },
+    {
+      "feature": "Swallowing Difficulty",
+      "correlation": 0.249
+    },
+    {
+      "feature": "Wheezing",
+      "correlation": 0.243
+    },
+    {
+      "feature": "Age",
+      "correlation": 0.06
+    },
+    {
+      "feature": "Gender",
+      "correlation": -0.165
+    }
+  ],
+  "scatter_age_smoking": [
+    {
+      "id": "P1",
+      "age": 33,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P10",
+      "age": 17,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P100",
+      "age": 35,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 4,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P1000",
+      "age": 37,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 7,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P101",
+      "age": 46,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 9
+    },
+    {
+      "id": "P102",
+      "age": 35,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 4,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P103",
+      "age": 52,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P104",
+      "age": 28,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P105",
+      "age": 35,
+      "smoking": 6,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P106",
+      "age": 46,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P107",
+      "age": 44,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P108",
+      "age": 64,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P109",
+      "age": 39,
+      "smoking": 6,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P11",
+      "age": 34,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P110",
+      "age": 27,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P111",
+      "age": 73,
+      "smoking": 8,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 5,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P112",
+      "age": 17,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P113",
+      "age": 34,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P114",
+      "age": 36,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P115",
+      "age": 14,
+      "smoking": 5,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P116",
+      "age": 24,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P117",
+      "age": 53,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P118",
+      "age": 62,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 9
+    },
+    {
+      "id": "P119",
+      "age": 29,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P12",
+      "age": 36,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P120",
+      "age": 65,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P121",
+      "age": 38,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P122",
+      "age": 19,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P123",
+      "age": 33,
+      "smoking": 4,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P124",
+      "age": 28,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P125",
+      "age": 35,
+      "smoking": 6,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P126",
+      "age": 42,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P127",
+      "age": 32,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P128",
+      "age": 33,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P129",
+      "age": 25,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P13",
+      "age": 14,
+      "smoking": 5,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P130",
+      "age": 27,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P131",
+      "age": 28,
+      "smoking": 4,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P132",
+      "age": 32,
+      "smoking": 4,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P133",
+      "age": 45,
+      "smoking": 6,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P134",
+      "age": 27,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P135",
+      "age": 26,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P136",
+      "age": 48,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 4,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P137",
+      "age": 17,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P138",
+      "age": 22,
+      "smoking": 6,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P139",
+      "age": 42,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P14",
+      "age": 24,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P140",
+      "age": 35,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 1,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P141",
+      "age": 24,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P142",
+      "age": 38,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P143",
+      "age": 18,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P144",
+      "age": 23,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P145",
+      "age": 24,
+      "smoking": 4,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P146",
+      "age": 35,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P147",
+      "age": 38,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 5,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P148",
+      "age": 47,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P149",
+      "age": 52,
+      "smoking": 7,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P15",
+      "age": 53,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P150",
+      "age": 44,
+      "smoking": 7,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P151",
+      "age": 38,
+      "smoking": 4,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P152",
+      "age": 62,
+      "smoking": 6,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P153",
+      "age": 61,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P154",
+      "age": 55,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P155",
+      "age": 45,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P156",
+      "age": 38,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P157",
+      "age": 44,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P158",
+      "age": 45,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P159",
+      "age": 33,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P16",
+      "age": 62,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 9
+    },
+    {
+      "id": "P160",
+      "age": 32,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P161",
+      "age": 44,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 1,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P162",
+      "age": 62,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P163",
+      "age": 38,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P164",
+      "age": 33,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P165",
+      "age": 22,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P166",
+      "age": 35,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P167",
+      "age": 23,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P168",
+      "age": 48,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 1,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P169",
+      "age": 46,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P17",
+      "age": 29,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P170",
+      "age": 52,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P171",
+      "age": 52,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P172",
+      "age": 48,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P173",
+      "age": 36,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P174",
+      "age": 31,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P175",
+      "age": 38,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P176",
+      "age": 35,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P177",
+      "age": 44,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P178",
+      "age": 33,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P179",
+      "age": 45,
+      "smoking": 4,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P18",
+      "age": 65,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P180",
+      "age": 53,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P181",
+      "age": 35,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P182",
+      "age": 46,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 9
+    },
+    {
+      "id": "P183",
+      "age": 27,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P184",
+      "age": 26,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P185",
+      "age": 37,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P186",
+      "age": 28,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P187",
+      "age": 19,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P188",
+      "age": 29,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P189",
+      "age": 39,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 9
+    },
+    {
+      "id": "P19",
+      "age": 38,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P190",
+      "age": 49,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P191",
+      "age": 37,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 8,
+      "coughing_blood": 9
+    },
+    {
+      "id": "P192",
+      "age": 26,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 7,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P193",
+      "age": 37,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 7,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P194",
+      "age": 33,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P195",
+      "age": 44,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P196",
+      "age": 37,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P197",
+      "age": 25,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P198",
+      "age": 18,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 9
+    },
+    {
+      "id": "P199",
+      "age": 47,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P2",
+      "age": 25,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P20",
+      "age": 19,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P200",
+      "age": 26,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 8,
+      "coughing_blood": 9
+    },
+    {
+      "id": "P201",
+      "age": 37,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 7,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P202",
+      "age": 35,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P203",
+      "age": 33,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P204",
+      "age": 25,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P205",
+      "age": 35,
+      "smoking": 6,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P206",
+      "age": 27,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P207",
+      "age": 48,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P208",
+      "age": 64,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P209",
+      "age": 39,
+      "smoking": 6,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 4,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P21",
+      "age": 33,
+      "smoking": 4,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P210",
+      "age": 27,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P211",
+      "age": 73,
+      "smoking": 8,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 5,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P212",
+      "age": 17,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P213",
+      "age": 34,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P214",
+      "age": 36,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P215",
+      "age": 14,
+      "smoking": 5,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P216",
+      "age": 24,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P217",
+      "age": 53,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P218",
+      "age": 62,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 9
+    },
+    {
+      "id": "P219",
+      "age": 29,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P22",
+      "age": 28,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P220",
+      "age": 65,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P221",
+      "age": 38,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P222",
+      "age": 19,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P223",
+      "age": 33,
+      "smoking": 4,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P224",
+      "age": 28,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P225",
+      "age": 35,
+      "smoking": 6,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P226",
+      "age": 42,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P227",
+      "age": 32,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P228",
+      "age": 33,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P229",
+      "age": 25,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P23",
+      "age": 35,
+      "smoking": 6,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P230",
+      "age": 27,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P231",
+      "age": 28,
+      "smoking": 4,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P232",
+      "age": 32,
+      "smoking": 4,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P233",
+      "age": 45,
+      "smoking": 6,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P234",
+      "age": 27,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P235",
+      "age": 26,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P236",
+      "age": 48,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 4,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P237",
+      "age": 17,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P238",
+      "age": 22,
+      "smoking": 6,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P239",
+      "age": 42,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P24",
+      "age": 42,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P240",
+      "age": 35,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 1,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P241",
+      "age": 24,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P242",
+      "age": 38,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P243",
+      "age": 18,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P244",
+      "age": 23,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P245",
+      "age": 24,
+      "smoking": 4,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P246",
+      "age": 35,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P247",
+      "age": 38,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 5,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P248",
+      "age": 47,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P249",
+      "age": 52,
+      "smoking": 7,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P25",
+      "age": 32,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P250",
+      "age": 44,
+      "smoking": 7,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P251",
+      "age": 38,
+      "smoking": 4,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P252",
+      "age": 62,
+      "smoking": 6,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P253",
+      "age": 61,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P254",
+      "age": 55,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P255",
+      "age": 45,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P256",
+      "age": 38,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P257",
+      "age": 44,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P258",
+      "age": 45,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P259",
+      "age": 33,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 1,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P26",
+      "age": 33,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P260",
+      "age": 32,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P261",
+      "age": 44,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 1,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P262",
+      "age": 62,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P263",
+      "age": 38,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P264",
+      "age": 33,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P265",
+      "age": 22,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P266",
+      "age": 35,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P267",
+      "age": 23,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P268",
+      "age": 48,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P269",
+      "age": 46,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P27",
+      "age": 25,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P270",
+      "age": 52,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P271",
+      "age": 52,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P272",
+      "age": 48,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P273",
+      "age": 36,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P274",
+      "age": 31,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P275",
+      "age": 38,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P276",
+      "age": 35,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P277",
+      "age": 44,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P278",
+      "age": 33,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P279",
+      "age": 45,
+      "smoking": 4,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P28",
+      "age": 27,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P280",
+      "age": 53,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P281",
+      "age": 35,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P282",
+      "age": 46,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 9
+    },
+    {
+      "id": "P283",
+      "age": 27,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P284",
+      "age": 26,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P285",
+      "age": 37,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P286",
+      "age": 28,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P287",
+      "age": 19,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P288",
+      "age": 29,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P289",
+      "age": 39,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 9
+    },
+    {
+      "id": "P29",
+      "age": 28,
+      "smoking": 4,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P290",
+      "age": 49,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P291",
+      "age": 37,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 8,
+      "coughing_blood": 9
+    },
+    {
+      "id": "P292",
+      "age": 26,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 7,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P293",
+      "age": 37,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 7,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P294",
+      "age": 33,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P295",
+      "age": 44,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P296",
+      "age": 37,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P297",
+      "age": 25,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P298",
+      "age": 18,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 9
+    },
+    {
+      "id": "P299",
+      "age": 47,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P3",
+      "age": 35,
+      "smoking": 6,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 4,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P30",
+      "age": 32,
+      "smoking": 4,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P300",
+      "age": 26,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 8,
+      "coughing_blood": 9
+    },
+    {
+      "id": "P301",
+      "age": 37,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 7,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P302",
+      "age": 35,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 4,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P303",
+      "age": 33,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P304",
+      "age": 25,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P305",
+      "age": 35,
+      "smoking": 6,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 4,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P306",
+      "age": 27,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P307",
+      "age": 48,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P308",
+      "age": 64,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P309",
+      "age": 39,
+      "smoking": 6,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 4,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P31",
+      "age": 45,
+      "smoking": 6,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P310",
+      "age": 27,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P311",
+      "age": 73,
+      "smoking": 8,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 5,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P312",
+      "age": 17,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P313",
+      "age": 34,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P314",
+      "age": 36,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P315",
+      "age": 14,
+      "smoking": 5,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P316",
+      "age": 24,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P317",
+      "age": 53,
+      "smoking": 2,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P318",
+      "age": 62,
+      "smoking": 8,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 9
+    },
+    {
+      "id": "P319",
+      "age": 29,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P32",
+      "age": 27,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P320",
+      "age": 65,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P321",
+      "age": 38,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P322",
+      "age": 19,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P323",
+      "age": 33,
+      "smoking": 4,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P324",
+      "age": 28,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P325",
+      "age": 35,
+      "smoking": 6,
+      "level": "High",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P326",
+      "age": 42,
+      "smoking": 7,
+      "level": "High",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P327",
+      "age": 32,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P328",
+      "age": 33,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P329",
+      "age": 25,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P33",
+      "age": 26,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P330",
+      "age": 27,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P331",
+      "age": 28,
+      "smoking": 4,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 8
+    },
+    {
+      "id": "P332",
+      "age": 32,
+      "smoking": 4,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P333",
+      "age": 45,
+      "smoking": 6,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P334",
+      "age": 27,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P335",
+      "age": 26,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P336",
+      "age": 48,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 4,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P337",
+      "age": 17,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P338",
+      "age": 22,
+      "smoking": 6,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P339",
+      "age": 42,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P34",
+      "age": 48,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 4,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P340",
+      "age": 35,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 1,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P341",
+      "age": 24,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P342",
+      "age": 38,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P343",
+      "age": 18,
+      "smoking": 1,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P344",
+      "age": 23,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 4,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P345",
+      "age": 24,
+      "smoking": 4,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 3,
+      "coughing_blood": 6
+    },
+    {
+      "id": "P346",
+      "age": 35,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P347",
+      "age": 38,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 5,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P348",
+      "age": 47,
+      "smoking": 2,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P349",
+      "age": 52,
+      "smoking": 7,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 1
+    },
+    {
+      "id": "P35",
+      "age": 17,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P350",
+      "age": 44,
+      "smoking": 7,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P351",
+      "age": 38,
+      "smoking": 4,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P352",
+      "age": 62,
+      "smoking": 6,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P353",
+      "age": 61,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 5
+    },
+    {
+      "id": "P354",
+      "age": 55,
+      "smoking": 3,
+      "level": "Low",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P355",
+      "age": 45,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P356",
+      "age": 38,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P357",
+      "age": 44,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P358",
+      "age": 45,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P359",
+      "age": 33,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 1,
+      "coughing_blood": 7
+    },
+    {
+      "id": "P36",
+      "age": 22,
+      "smoking": 6,
+      "level": "Low",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P360",
+      "age": 32,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 1,
+      "coughing_blood": 2
+    },
+    {
+      "id": "P361",
+      "age": 44,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 1,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P362",
+      "age": 62,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P363",
+      "age": 38,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P364",
+      "age": 33,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P365",
+      "age": 22,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 6,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P366",
+      "age": 35,
+      "smoking": 1,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 2,
+      "coughing_blood": 4
+    },
+    {
+      "id": "P367",
+      "age": 23,
+      "smoking": 2,
+      "level": "Medium",
+      "gender": "Male",
+      "air_pollution": 3,
+      "coughing_blood": 3
+    },
+    {
+      "id": "P368",
+      "age": 48,
+      "smoking": 3,
+      "level": "Medium",
+      "gender": "Female",
+      "air_pollution": 1,
+      "coughing_blood": 7
+    }
+  ],
+  "gender_level": {
+    "Male": {
+      "High": 252,
+      "Medium": 197,
+      "Low": 149
+    },
+    "Female": {
+      "Low": 154,
+      "Medium": 135,
+      "High": 113
+    }
+  },
+  "age_stats": {
+    "min": 14,
+    "max": 73,
+    "mean": 37.17,
+    "max_patient": {
+      "Patient Id": "P511",
+      "Age": 73,
+      "Gender": 1,
+      "Air Pollution": 5,
+      "Alcohol use": 6,
+      "Dust Allergy": 6,
+      "OccuPational Hazards": 5,
+      "Genetic Risk": 6,
+      "chronic Lung Disease": 5,
+      "Balanced Diet": 6,
+      "Obesity": 5,
+      "Smoking": 8,
+      "Passive Smoker": 5,
+      "Chest Pain": 5,
+      "Coughing of Blood": 5,
+      "Fatigue": 4,
+      "Weight Loss": 3,
+      "Shortness of Breath": 6,
+      "Wheezing": 2,
+      "Swallowing Difficulty": 1,
+      "Clubbing of Finger Nails": 2,
+      "Frequent Cold": 1,
+      "Dry Cough": 6,
+      "Snoring": 2,
+      "Level": "Medium"
+    }
+  }
+}
