@@ -400,6 +400,283 @@ st.markdown("""
         border: none !important;
         color: #ffffff !important;
     }
+
+    /* =========================================================================
+       STREAMLIT HEADER & SIDEBAR HAMBURGER TOGGLE (MOBILE & DESKTOP)
+       ========================================================================= */
+    header[data-testid="stHeader"] {
+        background: rgba(9, 13, 22, 0.9) !important;
+        backdrop-filter: blur(12px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+        border-bottom: 1px solid rgba(30, 41, 59, 0.6) !important;
+        z-index: 999990 !important;
+    }
+
+    /* Prominent, touch-friendly hamburger / sidebar toggle button */
+    [data-testid="stSidebarCollapsedControl"],
+    [data-testid="collapsedControl"],
+    header[data-testid="stHeader"] button,
+    button[data-testid="stSidebarCollapseButton"] {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        z-index: 1000000 !important;
+        background: #121826 !important;
+        border: 1.5px solid rgba(6, 182, 212, 0.5) !important;
+        border-radius: 10px !important;
+        color: #38bdf8 !important;
+        box-shadow: 0 4px 16px rgba(6, 182, 212, 0.25) !important;
+        min-width: 42px !important;
+        min-height: 42px !important;
+        cursor: pointer !important;
+        touch-action: manipulation !important;
+        transition: all 0.2s ease !important;
+    }
+
+    [data-testid="stSidebarCollapsedControl"]:hover,
+    [data-testid="collapsedControl"]:hover,
+    header[data-testid="stHeader"] button:hover,
+    button[data-testid="stSidebarCollapseButton"]:hover {
+        background: rgba(6, 182, 212, 0.2) !important;
+        border-color: #38bdf8 !important;
+        transform: scale(1.04) !important;
+    }
+
+    [data-testid="stSidebarCollapsedControl"] svg,
+    [data-testid="collapsedControl"] svg,
+    header[data-testid="stHeader"] button svg,
+    button[data-testid="stSidebarCollapseButton"] svg {
+        fill: #38bdf8 !important;
+        stroke: #38bdf8 !important;
+        color: #38bdf8 !important;
+        width: 22px !important;
+        height: 22px !important;
+        display: block !important;
+    }
+
+    /* =========================================================================
+       MOBILE TOP BAR & PILLS SWITCHER
+       ========================================================================= */
+    .mobile-top-bar {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .mobile-top-bar {
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            background: #121826 !important;
+            border: 1px solid var(--card-border) !important;
+            border-radius: 14px !important;
+            padding: 10px 14px !important;
+            margin-bottom: 12px !important;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3) !important;
+        }
+        .mobile-top-brand {
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+        }
+        .mobile-top-icon {
+            width: 36px !important;
+            height: 36px !important;
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.25) 0%, rgba(59, 130, 246, 0.25) 100%) !important;
+            border: 1px solid rgba(6, 182, 212, 0.45) !important;
+            border-radius: 10px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            font-size: 1.25rem !important;
+        }
+        .mobile-top-title {
+            font-family: 'Outfit', sans-serif !important;
+            font-size: 1.05rem !important;
+            font-weight: 800 !important;
+            color: #ffffff !important;
+            line-height: 1.15 !important;
+        }
+        .mobile-top-subtitle {
+            font-size: 0.68rem !important;
+            font-weight: 700 !important;
+            color: #38bdf8 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.06em !important;
+        }
+
+        /* Mobile Swipeable Pills */
+        div[data-testid="stPills"] {
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            overflow-x: auto !important;
+            padding: 4px 2px 12px 2px !important;
+            gap: 8px !important;
+            -webkit-overflow-scrolling: touch !important;
+            scrollbar-width: none !important;
+        }
+        div[data-testid="stPills"]::-webkit-scrollbar {
+            display: none !important;
+        }
+        div[data-testid="stPills"] button {
+            white-space: nowrap !important;
+            font-size: 0.82rem !important;
+            font-weight: 600 !important;
+            padding: 7px 14px !important;
+            border-radius: 9999px !important;
+            background: #121826 !important;
+            border: 1px solid var(--card-border) !important;
+            color: #94a3b8 !important;
+            transition: all 0.2s ease !important;
+            flex-shrink: 0 !important;
+        }
+        div[data-testid="stPills"] button[aria-selected="true"] {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.3) 0%, rgba(59, 130, 246, 0.3) 100%) !important;
+            border-color: #38bdf8 !important;
+            color: #ffffff !important;
+            font-weight: 700 !important;
+            box-shadow: 0 2px 10px rgba(6, 182, 212, 0.35) !important;
+        }
+    }
+
+    @media (min-width: 769px) {
+        .mobile-top-bar,
+        div[data-testid="stPills"] {
+            display: none !important;
+        }
+    }
+
+    /* =========================================================================
+       RESPONSIVE MOBILE ADAPTATIONS (SMALL SCREENS <= 768px)
+       ========================================================================= */
+    @media (max-width: 768px) {
+        .block-container {
+            padding-top: 4.2rem !important;
+            padding-left: 0.75rem !important;
+            padding-right: 0.75rem !important;
+            padding-bottom: 2.5rem !important;
+        }
+
+        /* Sidebar Mobile Overlay */
+        section[data-testid="stSidebar"] {
+            width: 86vw !important;
+            max-width: 320px !important;
+            box-shadow: 8px 0 32px rgba(0, 0, 0, 0.8) !important;
+            z-index: 1000001 !important;
+        }
+
+        section[data-testid="stSidebar"] button[data-testid="stSidebarCollapseButton"] {
+            background: rgba(255, 255, 255, 0.08) !important;
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            color: #f8fafc !important;
+            min-width: 38px !important;
+            min-height: 38px !important;
+        }
+
+        [data-testid="stSidebarCollapsedControl"],
+        [data-testid="collapsedControl"] {
+            top: 0.6rem !important;
+            left: 0.6rem !important;
+            position: fixed !important;
+        }
+
+        /* Page Banner */
+        .page-banner {
+            padding: 16px 14px !important;
+            margin-bottom: 16px !important;
+            border-radius: 14px !important;
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 10px !important;
+        }
+        .page-title {
+            font-size: 1.35rem !important;
+            line-height: 1.25 !important;
+        }
+        .page-desc {
+            font-size: 0.82rem !important;
+            line-height: 1.45 !important;
+        }
+
+        /* KPI Cards: 2 Columns on Mobile */
+        .kpi-row {
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 10px !important;
+            margin-bottom: 16px !important;
+        }
+        .kpi-card:last-child {
+            grid-column: span 2 !important;
+        }
+        .kpi-card {
+            padding: 12px 14px !important;
+            border-radius: 12px !important;
+        }
+        .kpi-num {
+            font-size: 1.45rem !important;
+        }
+        .kpi-title {
+            font-size: 0.7rem !important;
+            margin-bottom: 4px !important;
+        }
+        .kpi-sub {
+            font-size: 0.68rem !important;
+        }
+
+        /* Section Cards */
+        .card-box {
+            padding: 14px 10px !important;
+            margin-bottom: 14px !important;
+            border-radius: 14px !important;
+        }
+        .card-header-bar {
+            font-size: 0.95rem !important;
+            margin-bottom: 12px !important;
+            padding-bottom: 6px !important;
+        }
+
+        /* Streamlit Columns on Mobile: Full-width stacked */
+        div[data-testid="column"] {
+            width: 100% !important;
+            flex: 1 1 100% !important;
+            min-width: 100% !important;
+            margin-bottom: 8px !important;
+        }
+
+        /* Form Controls & Ergonomics */
+        .stSlider {
+            padding-bottom: 6px !important;
+        }
+        .stSlider > div[data-baseweb="slider"] {
+            padding-top: 12px !important;
+            padding-bottom: 12px !important;
+        }
+        .stRadio > div {
+            flex-direction: column !important;
+            gap: 8px !important;
+        }
+
+        /* Result Cards */
+        .result-badge-card {
+            padding: 18px 14px !important;
+            border-radius: 14px !important;
+        }
+        .result-badge-title {
+            font-size: 1.75rem !important;
+        }
+
+        /* DataTables */
+        div[data-testid="stDataFrame"] {
+            overflow-x: auto !important;
+            -webkit-overflow-scrolling: touch !important;
+        }
+
+        /* Plotly charts fit container on mobile */
+        .js-plotly-plot {
+            width: 100% !important;
+            overflow-x: hidden !important;
+        }
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -437,19 +714,47 @@ df = load_dataset()
 # ==============================================================================
 # 4. PLOTLY THEME
 # ==============================================================================
-def apply_clean_theme(fig, height=350):
+def apply_clean_theme(fig, height=340):
     fig.update_layout(
         template="plotly_dark",
         paper_bgcolor="rgba(0,0,0,0)",
         plot_bgcolor="rgba(18, 24, 38, 0.4)",
         font=dict(family="Plus Jakarta Sans, sans-serif", color="#94a3b8", size=11),
-        margin=dict(l=20, r=20, t=35, b=20),
+        margin=dict(l=55, r=25, t=42, b=55),
         height=height,
-        hoverlabel=dict(bgcolor="#1e293b", font_size=12, font_family="Plus Jakarta Sans"),
-        xaxis=dict(gridcolor="rgba(255, 255, 255, 0.05)"),
-        yaxis=dict(gridcolor="rgba(255, 255, 255, 0.05)")
+        hoverlabel=dict(bgcolor="#1e293b", font_size=12, font_family="Plus Jakarta Sans, sans-serif"),
+        xaxis=dict(
+            title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+            tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+            title_standoff=12,
+            gridcolor="rgba(255, 255, 255, 0.05)",
+            showline=True,
+            linecolor="rgba(255, 255, 255, 0.12)",
+            linewidth=1,
+            zeroline=False
+        ),
+        yaxis=dict(
+            title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+            tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+            title_standoff=10,
+            gridcolor="rgba(255, 255, 255, 0.05)",
+            showline=True,
+            linecolor="rgba(255, 255, 255, 0.12)",
+            linewidth=1,
+            zeroline=False
+        ),
+        legend=dict(
+            orientation="h",
+            yanchor="bottom",
+            y=1.02,
+            xanchor="right",
+            x=1.0,
+            font=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#cbd5e1"),
+            bgcolor="rgba(0,0,0,0)"
+        )
     )
     return fig
+
 
 def create_risk_gauge(pred_class, confidence, prob_dict):
     if pred_class == 'High':
@@ -499,6 +804,8 @@ def create_risk_gauge(pred_class, confidence, prob_dict):
 # ==============================================================================
 if "current_page" not in st.session_state:
     st.session_state.current_page = "🏠 Dashboard"
+if "mobile_nav_pills" not in st.session_state:
+    st.session_state.mobile_nav_pills = st.session_state.current_page
 
 with st.sidebar:
     st.markdown("""
@@ -532,6 +839,7 @@ with st.sidebar:
         display_label = f"▶ {label}" if is_active else f"  {label}"
         if st.button(display_label, key=f"nav_btn_{page_key}", use_container_width=True):
             st.session_state.current_page = page_key
+            st.session_state.mobile_nav_pills = page_key
             st.rerun()
 
     # Telemetry Widget
@@ -544,6 +852,46 @@ with st.sidebar:
         <div class="telemetry-row"><span>Accuracy</span><strong style="color:#10b981;">100.0% Test Split</strong></div>
     </div>
     """, unsafe_allow_html=True)
+
+# ------------------------------------------------------------------------------
+# MOBILE NAVIGATION BAR & PILLS (Visible on Mobile <= 768px)
+# ------------------------------------------------------------------------------
+mobile_nav_list = [
+    "🏠 Dashboard",
+    "🩺 Risk Prediction",
+    "📊 Analytics",
+    "📋 Dataset Explorer",
+    "🤖 Model Performance",
+    "ℹ️ About"
+]
+
+def on_mobile_nav_change():
+    if "mobile_nav_pills" in st.session_state and st.session_state.mobile_nav_pills:
+        st.session_state.current_page = st.session_state.mobile_nav_pills
+
+st.markdown("""
+<div class="mobile-top-bar">
+    <div class="mobile-top-brand">
+        <div class="mobile-top-icon">🫁</div>
+        <div>
+            <div class="mobile-top-title">PulmoVision AI</div>
+            <div class="mobile-top-subtitle">Clinical Oncology ML</div>
+        </div>
+    </div>
+    <div class="mobile-top-status">
+        <span class="badge badge-cyan">v2.4 Online</span>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
+# Pills selector for 1-tap mobile page navigation
+st.pills(
+    "Navigation Menu",
+    options=mobile_nav_list,
+    key="mobile_nav_pills",
+    on_change=on_mobile_nav_change,
+    label_visibility="collapsed"
+)
 
 selected_page = st.session_state.current_page
 
@@ -619,12 +967,13 @@ if selected_page == "🏠 Dashboard":
                 textposition='inside',
                 insidetextfont=dict(size=12, color="#ffffff", family="Outfit")
             )])
+            apply_clean_theme(fig_donut, height=330)
             fig_donut.update_layout(
                 showlegend=True,
-                legend=dict(orientation="h", yanchor="bottom", y=-0.2, xanchor="center", x=0.5),
+                margin=dict(l=20, r=20, t=25, b=45),
+                legend=dict(orientation="h", yanchor="bottom", y=-0.16, xanchor="center", x=0.5, font=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#cbd5e1")),
                 annotations=[dict(text=f"<b>{total_patients}</b><br><span style='font-size:11px; color:#94a3b8;'>Patients</span>", x=0.5, y=0.5, font_size=18, font_color="#f8fafc", showarrow=False)]
             )
-            apply_clean_theme(fig_donut, height=320)
             st.plotly_chart(fig_donut, use_container_width=True)
             st.markdown('</div>', unsafe_allow_html=True)
 
@@ -639,10 +988,25 @@ if selected_page == "🏠 Dashboard":
                 barmode="overlay",
                 opacity=0.8,
                 nbins=22,
-                labels={"Level": "Risk Tier", "Age": "Patient Age (Years)"}
+                labels={"Level": "Risk Tier", "Age": "Patient Age (Years)", "count": "Patients"}
             )
-            apply_clean_theme(fig_age, height=320)
-            fig_age.update_layout(legend=dict(orientation="h", yanchor="bottom", y=-0.2, xanchor="center", x=0.5))
+            apply_clean_theme(fig_age, height=330)
+            fig_age.update_layout(
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1.0),
+                xaxis=dict(
+                    title_text="Patient Age (Years)",
+                    title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                    tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+                    title_standoff=12,
+                    dtick=10
+                ),
+                yaxis=dict(
+                    title_text="Patients",
+                    title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                    tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+                    title_standoff=10
+                )
+            )
             st.plotly_chart(fig_age, use_container_width=True)
             st.markdown('</div>', unsafe_allow_html=True)
 
@@ -659,10 +1023,27 @@ if selected_page == "🏠 Dashboard":
                 category_orders={"Level": LEVEL_ORDER},
                 color_discrete_map=RISK_COLORS,
                 barmode="group",
-                labels={"Smoking": "Smoking Index (1 - 8 Scale)", "Count": "Patients"}
+                labels={"Smoking": "Smoking Severity Index (1 - 8)", "Count": "Patients", "Level": "Risk Tier"}
             )
-            apply_clean_theme(fig_smoke, height=300)
-            fig_smoke.update_layout(legend=dict(orientation="h", yanchor="bottom", y=-0.22, xanchor="center", x=0.5))
+            apply_clean_theme(fig_smoke, height=330)
+            fig_smoke.update_layout(
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1.0),
+                xaxis=dict(
+                    title_text="Smoking Severity Index (1 - 8 Scale)",
+                    title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                    tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+                    title_standoff=12,
+                    tickmode="linear",
+                    tick0=1,
+                    dtick=1
+                ),
+                yaxis=dict(
+                    title_text="Patients",
+                    title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                    tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+                    title_standoff=10
+                )
+            )
             st.plotly_chart(fig_smoke, use_container_width=True)
             st.markdown('</div>', unsafe_allow_html=True)
 
@@ -677,10 +1058,27 @@ if selected_page == "🏠 Dashboard":
                 category_orders={"Level": LEVEL_ORDER},
                 color_discrete_map=RISK_COLORS,
                 barmode="group",
-                labels={"Air Pollution": "Air Pollution Index (1 - 8 Scale)", "Count": "Patients"}
+                labels={"Air Pollution": "Air Pollution Exposure Index (1 - 8 Scale)", "Count": "Patients", "Level": "Risk Tier"}
             )
-            apply_clean_theme(fig_poll, height=300)
-            fig_poll.update_layout(legend=dict(orientation="h", yanchor="bottom", y=-0.22, xanchor="center", x=0.5))
+            apply_clean_theme(fig_poll, height=330)
+            fig_poll.update_layout(
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1.0),
+                xaxis=dict(
+                    title_text="Air Pollution Exposure Index (1 - 8 Scale)",
+                    title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                    tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+                    title_standoff=12,
+                    tickmode="linear",
+                    tick0=1,
+                    dtick=1
+                ),
+                yaxis=dict(
+                    title_text="Patients",
+                    title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                    tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+                    title_standoff=10
+                )
+            )
             st.plotly_chart(fig_poll, use_container_width=True)
             st.markdown('</div>', unsafe_allow_html=True)
 
@@ -1050,7 +1448,24 @@ elif selected_page == "📊 Analytics":
                 opacity=0.85
             )
             fig_scatter.update_traces(marker=dict(size=8, line=dict(width=1, color='rgba(255,255,255,0.3)')))
-            apply_clean_theme(fig_scatter, height=340)
+            apply_clean_theme(fig_scatter, height=350)
+            fig_scatter.update_layout(
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1.0),
+                xaxis=dict(
+                    title_text="Patient Age (Years)",
+                    title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                    tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+                    title_standoff=12
+                ),
+                yaxis=dict(
+                    title_text="Active Smoking Index (1 - 8)",
+                    title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                    tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+                    title_standoff=10,
+                    tickmode="linear",
+                    dtick=1
+                )
+            )
             st.plotly_chart(fig_scatter, use_container_width=True)
             st.markdown('</div>', unsafe_allow_html=True)
 
@@ -1067,9 +1482,24 @@ elif selected_page == "📊 Analytics":
                 category_orders={"Level": LEVEL_ORDER},
                 color_discrete_map=RISK_COLORS,
                 barmode="group",
-                labels={"Gender_Label": "Biological Sex", "Count": "Number of Patients"}
+                labels={"Gender_Label": "Biological Sex", "Count": "Number of Patients", "Level": "Risk Tier"}
             )
-            apply_clean_theme(fig_gender, height=340)
+            apply_clean_theme(fig_gender, height=350)
+            fig_gender.update_layout(
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1.0),
+                xaxis=dict(
+                    title_text="Biological Sex",
+                    title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                    tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#f1f5f9"),
+                    title_standoff=12
+                ),
+                yaxis=dict(
+                    title_text="Number of Patients",
+                    title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                    tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+                    title_standoff=10
+                )
+            )
             st.plotly_chart(fig_gender, use_container_width=True)
             st.markdown('</div>', unsafe_allow_html=True)
 
@@ -1094,8 +1524,21 @@ elif selected_page == "📊 Analytics":
                     color_continuous_scale="Tealgrn",
                     labels={"Importance": "Model Weight Contribution (%)", "Feature": "Clinical Feature"}
                 )
-                apply_clean_theme(fig_imp, height=360)
-                fig_imp.update_layout(coloraxis_showscale=False)
+                apply_clean_theme(fig_imp, height=370)
+                fig_imp.update_layout(
+                    coloraxis_showscale=False,
+                    margin=dict(l=145, r=25, t=30, b=55),
+                    xaxis=dict(
+                        title_text="Model Weight Contribution (%)",
+                        title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                        tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+                        title_standoff=12
+                    ),
+                    yaxis=dict(
+                        title_text="",
+                        tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#cbd5e1")
+                    )
+                )
                 st.plotly_chart(fig_imp, use_container_width=True)
             st.markdown('</div>', unsafe_allow_html=True)
 
@@ -1118,8 +1561,21 @@ elif selected_page == "📊 Analytics":
                 color_continuous_scale="Purp",
                 labels={"Correlation": "Pearson Correlation (r)", "Feature": "Clinical Feature"}
             )
-            apply_clean_theme(fig_corr, height=360)
-            fig_corr.update_layout(coloraxis_showscale=False)
+            apply_clean_theme(fig_corr, height=370)
+            fig_corr.update_layout(
+                coloraxis_showscale=False,
+                margin=dict(l=145, r=25, t=30, b=55),
+                xaxis=dict(
+                    title_text="Pearson Correlation (r)",
+                    title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                    tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+                    title_standoff=12
+                ),
+                yaxis=dict(
+                    title_text="",
+                    tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#cbd5e1")
+                )
+            )
             st.plotly_chart(fig_corr, use_container_width=True)
             st.markdown('</div>', unsafe_allow_html=True)
 
@@ -1137,7 +1593,23 @@ elif selected_page == "📊 Analytics":
                 barmode="group",
                 labels={feat_choice: f"{feat_choice} Value", "count": "Patients"}
             )
-            apply_clean_theme(fig_feat, height=310)
+            apply_clean_theme(fig_feat, height=330)
+            fig_feat.update_layout(
+                legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1.0),
+                xaxis=dict(
+                    title_text=f"{feat_choice} Value",
+                    title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                    tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+                    title_standoff=12,
+                    dtick=1 if (df[feat_choice].max() <= 10) else None
+                ),
+                yaxis=dict(
+                    title_text="Patients",
+                    title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                    tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+                    title_standoff=10
+                )
+            )
             st.plotly_chart(fig_feat, use_container_width=True)
 
         with col6:
@@ -1253,6 +1725,7 @@ elif selected_page == "📋 Dataset Explorer":
                         new_inputs[feat] = int(chosen_patient[feat])
                     st.session_state.pred_inputs = new_inputs
                     st.session_state.current_page = "🩺 Risk Prediction"
+                    st.session_state.mobile_nav_pills = "🩺 Risk Prediction"
                     st.toast(f"Loaded Patient #{selected_pid} into Predictor!")
                     st.rerun()
 
@@ -1339,8 +1812,23 @@ elif selected_page == "🤖 Model Performance":
             color_continuous_scale="Blues",
             labels=dict(x="Predicted Risk Level", y="Actual Risk Level", color="Count")
         )
-        apply_clean_theme(fig_cm, height=320)
-        fig_cm.update_layout(coloraxis_showscale=False)
+        apply_clean_theme(fig_cm, height=340)
+        fig_cm.update_layout(
+            coloraxis_showscale=False,
+            margin=dict(l=85, r=25, t=30, b=60),
+            xaxis=dict(
+                title_text="Predicted Risk Level",
+                title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#cbd5e1"),
+                title_standoff=12
+            ),
+            yaxis=dict(
+                title_text="Actual Risk Level",
+                title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#cbd5e1"),
+                title_standoff=10
+            )
+        )
         st.plotly_chart(fig_cm, use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
@@ -1379,8 +1867,21 @@ elif selected_page == "🤖 Model Performance":
             color_continuous_scale="Tealgrn",
             labels={"Importance (%)": "Relative Model Importance (%)", "Feature": "Clinical Parameter"}
         )
-        apply_clean_theme(fig_all_imp, height=500)
-        fig_all_imp.update_layout(coloraxis_showscale=False)
+        apply_clean_theme(fig_all_imp, height=520)
+        fig_all_imp.update_layout(
+            coloraxis_showscale=False,
+            margin=dict(l=165, r=25, t=30, b=55),
+            xaxis=dict(
+                title_text="Relative Model Importance (%)",
+                title_font=dict(family="Plus Jakarta Sans, sans-serif", size=12, color="#e2e8f0"),
+                tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#94a3b8"),
+                title_standoff=12
+            ),
+            yaxis=dict(
+                title_text="",
+                tickfont=dict(family="Plus Jakarta Sans, sans-serif", size=11, color="#cbd5e1")
+            )
+        )
         st.plotly_chart(fig_all_imp, use_container_width=True)
         st.markdown('</div>', unsafe_allow_html=True)
 
